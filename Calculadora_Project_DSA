@@ -1,0 +1,37 @@
+# Passo 1 = Criar uma função para passar a mensagem inicial
+
+print('Selecione o número que deseja realizar a operação:')
+print('1. Adição\n2. Subtração\n3. Multiplicação\n4. Divisão')
+n = int(input('Digite o desejado(1/2/3/4): '))
+
+# Passo 2 = Criar as varíaveis que vão conter os valores a serem calculados
+a = float(input("Digite o primeiro valor: "))
+    
+b = float(input("Digite o segundoo valor: "))
+
+# passo 3 =  Criar as condicionais que vai chamar as demais
+if n == 1:
+    add(a,b)
+elif n == 2:
+    sub(a,b)
+elif n == 3:
+    multi(a,b)
+elif n == 4:
+    div(a,b)
+
+# passo 4 = Criar a função para chamar as fórmulas
+def add(a,b):
+    add1 = a + b
+    print(f' O resultado do cálculo {a} + {b} foi de: {add1}.')
+
+def sub(a,b):
+    sub1 = a - b
+    print(f' O resultado do cálculo {a} - {b} foi de: {sub1}.')
+
+def multi(a,b):
+    multi1 = a * b
+    print(f' O resultado do cálculo {a} * {b} foi de: {multi1}.')
+
+def div(a,b):
+    div1 = a / b
+    print(f' O resultado do cálculo {a} / {b} foi de: {div1}.')
