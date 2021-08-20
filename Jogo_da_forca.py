@@ -88,7 +88,7 @@ class Hangman():
 
     # Método para verificar se o jogador ganhou
     def ganhou(self):
-        if "_" not in self.palavra:
+        if "_" not in self.esconde_palavra:
             return True
         return False
 
